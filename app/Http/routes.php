@@ -29,7 +29,7 @@ delete('logout','SessionsController@destroy')->name('logout');
 get('signup/confirm/{token}','UsersController@confirmEmail')->name('confirm_email');
 
 get('password/email','Auth\PasswordController@getEmail')->name('password.reset');
-post('password/email','Auth\PasswordController@postEmail')->name('password.edit');
+post('password/email','Auth\PasswordController@postEmail')->name('password.email');
 get('password/reset/{token}','Auth\PasswordController@getReset')->name('password.edit');
 post('password/reset','Auth\PasswordController@postReset')->name('password.update');
 
