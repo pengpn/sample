@@ -3,6 +3,8 @@
 $navbar-color:#3c3e42;
 /* universal */
 
+
+
 body {
   padding-top: 60px;
 }
@@ -19,6 +21,9 @@ textarea {
   text-align: center;
 }
 
+.alert-status {
+  @extend .alert-info;
+}
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
@@ -196,9 +201,9 @@ input {
   }
 }
 
-/* Users index */
 .delete-btn{
   float: right;
   position: relative;
   right: 0;
 }
+
